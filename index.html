@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hospital Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Appointment</h1>
+    <form id="appointmentForm">
+      <input type="text" id="patientName" placeholder="Patient Name" required>
+      <select id="doctorName" required>
+        <option value="">Select Doctor</option>
+        <option value="Dr. John (Cardiology)">Dr. John (Cardiology)</option>
+        <option value="Dr. Emily (Pediatrics)">Dr. Emily (Pediatrics)</option>
+      </select>
+      <input type="date" id="appointmentDate" required>
+      <button type="submit">Book</button>
+    </form>
+
+    <h2>Appointments</h2>
+    <table id="appointmentsTable">
+      <thead>
+        <tr>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
